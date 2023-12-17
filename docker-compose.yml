@@ -1,0 +1,25 @@
+version: "3"
+services:
+       web:
+        image: php:apache
+        depends_on:
+              - api 
+        ports:
+              - "8080:80"
+        volumes:
+              - ./website:/var/www/html
+        environment:
+              - USERNAME=anis
+              - PASSWORD=hanoune
+        networks: 
+              - reseau.web
+       
+       api:
+         image: students
+         volumes:
+              - ./simple_api/student_list.json:/data/student_list.json
+         networks:
+              - reseau.web
+networks:
+    reseau.web:
+          
