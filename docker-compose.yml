@@ -8,9 +8,7 @@ services:
               - "8080:80"
         volumes:
               - ./website:/var/www/html
-        environment:
-              - USERNAME=anis
-              - PASSWORD=hanoune
+        
         networks: 
               - reseau.web
        
