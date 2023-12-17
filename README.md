@@ -1,4 +1,6 @@
 # Docker-webapp
+![image](https://github.com/ahanoune/Docker-webapp/assets/119413702/89c4d855-4949-4c0e-bd8b-7416b2b86a2b)
+
 Ce dépôt est une application simple pour répertorier les étudiants avec un serveur Web (PHP) et une API (Flask)
 
 
